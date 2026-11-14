@@ -1,0 +1,87 @@
+{
+  "rows_raw": 253680,
+  "rows_after_dedup": 229474,
+  "train_rows": 183579,
+  "test_rows": 45895,
+  "positive_rate": 0.1529454317264701,
+  "best_model": "Gradient Boosting",
+  "target_recall": 0.8,
+  "short_form_features": [
+    "GenHlth",
+    "BMI",
+    "Age",
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "HvyAlcoholConsump"
+  ],
+  "results": {
+    "Baseline (majority class)": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.15293604967861424,
+      "recall": 0.0,
+      "precision": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.8470639503213858,
+      "threshold": 0.5,
+      "cv_roc_auc": 0.5
+    },
+    "Logistic Regression": {
+      "roc_auc": 0.811338908629541,
+      "pr_auc": 0.42253084179071243,
+      "recall": 0.8107992591537256,
+      "precision": 0.29985773749934136,
+      "f1": 0.4378029079159935,
+      "accuracy": 0.6815339361586229,
+      "threshold": 0.13095390203844248,
+      "cv_roc_auc": 0.8035166091862823,
+      "recall_at_0.5": 0.16198888730588404,
+      "best_params": {
+        "model__C": 0.13292918943162169
+      }
+    },
+    "Random Forest": {
+      "roc_auc": 0.8165449761609388,
+      "pr_auc": 0.44264570779010787,
+      "recall": 0.8107992591537256,
+      "precision": 0.3025196682968318,
+      "f1": 0.44063334752816385,
+      "accuracy": 0.6851726767621745,
+      "threshold": 0.1474333442324401,
+      "cv_roc_auc": 0.8046831146181376,
+      "recall_at_0.5": 0.10799259153725602,
+      "best_params": {
+        "model__n_estimators": 100,
+        "model__min_samples_leaf": 20,
+        "model__max_depth": 16
+      }
+    },
+    "Gradient Boosting": {
+      "roc_auc": 0.8189213329228628,
+      "pr_auc": 0.44641917466490727,
+      "recall": 0.8179227810229377,
+      "precision": 0.305047821466525,
+      "f1": 0.4443670420681915,
+      "accuracy": 0.6871772524240113,
+      "threshold": 0.1367688925671443,
+      "cv_roc_auc": 0.8086877118581128,
+      "recall_at_0.5": 0.1688274683003277,
+      "best_params": {
+        "model__min_samples_leaf": 20,
+        "model__max_leaf_nodes": 15,
+        "model__max_iter": 300,
+        "model__learning_rate": 0.1
+      }
+    },
+    "Gradient Boosting - short form (7 questions)": {
+      "roc_auc": 0.8136868270080383,
+      "pr_auc": 0.43710482823000935,
+      "recall": 0.8098019660920359,
+      "precision": 0.30074074074074075,
+      "f1": 0.43859716810062116,
+      "accuracy": 0.6829502124414424,
+      "threshold": 0.13816572892144272,
+      "cv_roc_auc": null
+    }
+  }
+}
