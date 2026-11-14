@@ -59,4 +59,4 @@ Trained on US self-reported survey data (2015); prediabetes and diabetes are gro
 
 CDC Diabetes Health Indicators, UCI Machine Learning Repository: https://archive.ics.uci.edu/dataset/891
 
-Built by [names] during the NextGen Institute ML internship.
+Built by [noura Almufty] during the NextGen Institute ML internship.
