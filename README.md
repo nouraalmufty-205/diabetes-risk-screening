@@ -1,12 +1,13 @@
 # 🩺 Diabetes Risk Screening Tool
 
+> Many people have diabetes or prediabetes and don't know it. This tool turns a short health questionnaire into a risk level that tells people when it is worth seeing a doctor. **A screening aid, not a medical diagnosis.**
+
+**🔗 Live app:**
+https://diabetes-risk-screening-4msxbvjieta4hteduvqyqz.streamlit.app
+
 ## app UI
 
-![alt text](image.png)
-
-# LINK app
-
-https://diabetes-risk-screening-4msxbvjieta4hteduvqyqz.streamlit.app
+![App screenshot](image.png)
 
 > Many people have diabetes or prediabetes and don't know it. This tool turns a short health questionnaire into a risk level that tells people when it is worth seeing a doctor. **A screening aid, not a medical diagnosis.**
 
@@ -18,13 +19,13 @@ https://diabetes-risk-screening-4msxbvjieta4hteduvqyqz.streamlit.app
 
 All numbers come from `python train.py` (test set = 20% of the data, never used for tuning).
 
-| Model                                  | ROC-AUC | Recall | Precision | F1  |
-| -------------------------------------- | ------- | ------ | --------- | --- |
-| Baseline (majority class)              | [X]     | [X]    | [X]       | [X] |
-| Logistic Regression                    | [X]     | [X]    | [X]       | [X] |
-| Random Forest                          | [X]     | [X]    | [X]       | [X] |
-| Gradient Boosting                      | [X]     | [X]    | [X]       | [X] |
-| Best model, short form ([N] questions) | [X]     | [X]    | [X]       | [X] |
+| Model                                  | ROC-AUC | Recall  | Precision | F1      |
+| -------------------------------------- | ------- | ------- | --------- | ------- |
+| Baseline (majority class)              | [0.500] | [0.000] | [0.000]   | [0.000] |
+| Logistic Regression                    | [0.811] | [0.811] | [0.300]   | [0.438] |
+| Random Forest                          | [0.817] | [0.811] | [0.303]   | [0.441] |
+| Gradient Boosting                      | [0.819] | [0.818] | [0.305]   | [0.444] |
+| Best model, short form ([N] questions) | [0.814] | [0.810] | [0.301]   | [0.439] |
 
 Copy these from `outputs/results.csv` after you run the training. Never write a number you did not measure.
 
