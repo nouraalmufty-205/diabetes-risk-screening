@@ -9,12 +9,6 @@ https://diabetes-risk-screening-4msxbvjieta4hteduvqyqz.streamlit.app
 
 ![App screenshot](image.png)
 
-> Many people have diabetes or prediabetes and don't know it. This tool turns a short health questionnaire into a risk level that tells people when it is worth seeing a doctor. **A screening aid, not a medical diagnosis.**
-
-**🔗 Live app:** [ADD YOUR STREAMLIT / HUGGING FACE LINK]
-
-![App screenshot](ADD_SCREENSHOT_OR_GIF.png)
-
 ## Results
 
 All numbers come from `python train.py` (test set = 20% of the data, never used for tuning).
